@@ -4,6 +4,7 @@
 //A move() function that renames, if possible, or falls back to copying
 
 var fs = require('fs');
+
 module.exports = function move (oldPath, newPath, callback) {
     //    Call fs.rename() and hope it works
     fs.rename(oldPath, newPath, function (err) {
